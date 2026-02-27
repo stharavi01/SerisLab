@@ -8,7 +8,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-ff0055?style=flat-square)](https://www.framer.com/motion/)
 
-> **The portfolio that evolves with you.** Turn your GitHub profile or resume into a living, AI-powered portfolio in under 3 minutes — no coding, no design skills, no manual updates.
+> **We turn your GitHub or resume into a living portfolio that grows with you. Build once. Sync forever. Edit anytime. Powered by AI — refined by you..
 
 **[→ Try it free at serislab.com](https://serislab.com)** · [View Showcase](https://serislab.com/showcase) · [Pricing](https://serislab.com/pricing)
 
