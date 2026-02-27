@@ -1,0 +1,297 @@
+@import "../globals.css";
+
+.app-landing {
+  --primary: 150 25% 48%;
+  --primary-hover: 150 25% 42%;
+  --accent-sage: 150 25% 48%;
+  --accent-purple: 270 30% 55%;
+  --accent-rose: 350 45% 60%;
+  --accent-coral: 10 55% 60%;
+  --accent-gold: 40 60% 60%;
+  --accent-tan: 35 50% 65%;
+  --accent-blue: 218 38% 53%;
+
+  --success: 150 25% 48%;
+  --warning: 38 65% 62%;
+  --error: 10 55% 60%;
+  --info: 218 38% 53%;
+
+  --neutral-50: 30 25% 97%;
+  --neutral-100: 30 20% 95%;
+  --neutral-200: 35 30% 93%;
+  --neutral-300: 120 10% 89%;
+  --neutral-400: 0 0% 66%;
+  --neutral-500: 0 0% 53%;
+  --neutral-600: 0 0% 40%;
+  --neutral-700: 15 5% 16%;
+  --neutral-800: 0 0% 13%;
+  --neutral-900: 0 0% 0%;
+
+  --bg-base: 150 35% 99%;
+  --bg-subtle: 150 25% 97%;
+  --bg-muted: 150 20% 95%;
+  --bg-accent: 150 22% 93%;
+
+  --card-bg: 150 25% 97%;
+  --card-border: 150 12% 89%;
+  --card-hover-border: 150 25% 48%;
+
+  --text-primary: 150 20% 14%;
+  --text-secondary: 150 14% 30%;
+  --text-tertiary: 150 6% 50%;
+  --text-muted: 150 4% 62%;
+  --text-on-color: 0 0% 100%;
+  --text-on-dark: 30 25% 97%;
+
+  --btn-primary-bg: 150 45% 18%;
+  --btn-primary-hover: 150 35% 28%;
+  --btn-primary-text: 0 0% 100%;
+  --btn-secondary-bg: 270 30% 55%;
+  --btn-secondary-hover: 270 30% 48%;
+  --btn-secondary-text: 0 0% 100%;
+  --btn-accent-bg: 350 45% 60%;
+  --btn-accent-hover: 350 45% 52%;
+  --btn-accent-text: 0 0% 100%;
+
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+}
+
+[data-theme="dark"] .app-landing {
+  --primary: 150 28% 55%;
+  --primary-hover: 150 28% 62%;
+  --accent-sage: 150 28% 55%;
+  --accent-purple: 270 30% 60%;
+  --accent-rose: 350 45% 65%;
+  --accent-coral: 10 55% 65%;
+  --accent-gold: 40 60% 65%;
+  --accent-tan: 35 50% 68%;
+  --accent-blue: 218 38% 58%;
+
+  --success: 150 28% 55%;
+  --warning: 38 65% 65%;
+  --error: 10 55% 65%;
+  --info: 218 38% 58%;
+
+  --neutral-50: 150 50% 7%;
+  --neutral-100: 150 60% 10%;
+  --neutral-200: 150 55% 12%;
+  --neutral-300: 0 0% 20%;
+  --neutral-400: 0 0% 40%;
+  --neutral-500: 0 0% 53%;
+  --neutral-600: 0 0% 66%;
+  --neutral-700: 120 10% 89%;
+  --neutral-800: 30 20% 95%;
+  --neutral-900: 0 0% 100%;
+
+  --bg-base: 0 0% 0%;
+  --bg-subtle: 150 50% 7%;
+  --bg-muted: 150 60% 10%;
+  --bg-accent: 150 55% 12%;
+
+  --card-bg: 0 0% 8%;
+  --card-border: 0 0% 20%;
+  --card-hover-border: 150 28% 55%;
+
+  --text-primary: 150 10% 90%;
+  --text-secondary: 150 8% 76%;
+  --text-tertiary: 150 5% 64%;
+  --text-muted: 150 3% 52%;
+  --text-on-color: 0 0% 0%;
+  --text-on-dark: 150 10% 90%;
+
+  --btn-primary-bg: 150 50% 28%;
+  --btn-primary-hover: 150 45% 35%;
+  --btn-primary-text: 0 0% 0%;
+  --btn-secondary-bg: 270 30% 60%;
+  --btn-secondary-hover: 270 30% 67%;
+  --btn-secondary-text: 0 0% 0%;
+  --btn-accent-bg: 350 45% 65%;
+  --btn-accent-hover: 350 45% 72%;
+  --btn-accent-text: 0 0% 0%;
+
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.8);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.9);
+}
+
+.landing-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .landing-container {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .landing-container {
+    padding: 0 4rem;
+  }
+}
+
+/* Hide scrollbar for horizontal filter carousels */
+.filter-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.filter-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.auth-background {
+  position: relative;
+  background: hsl(var(--bg-base));
+  min-height: 100vh;
+}
+
+.auth-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      hsl(var(--accent-sage) / 0.04) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      hsl(var(--accent-purple) / 0.03) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      hsl(var(--bg-subtle)) 0%,
+      transparent 100%
+    );
+  pointer-events: none;
+}
+
+.emerald-button {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  min-height: 3rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  transform: scale(1);
+  box-shadow: var(--shadow-lg);
+  background: hsl(var(--btn-primary-bg));
+  color: hsl(var(--btn-primary-text));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.emerald-button:hover:not(:disabled) {
+  box-shadow: var(--shadow-xl);
+  background: hsl(var(--btn-primary-hover));
+  transform: scale(1.02);
+}
+
+.emerald-button:disabled,
+.emerald-button[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Landing page typography - expressive marketing fonts */
+.app-landing h1,
+.app-landing h2 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.app-landing h3,
+.app-landing h4,
+.app-landing h5,
+.app-landing h6 {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.app-landing p,
+.app-landing span,
+.app-landing a,
+.app-landing button,
+.app-landing input,
+.app-landing textarea,
+.app-landing select,
+.app-landing label,
+.app-landing li,
+.app-landing td,
+.app-landing th {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.app-landing strong,
+.app-landing b {
+  font-weight: 700;
+}
+
+.app-landing .text-italic-accent {
+  font-style: italic;
+  color: hsl(var(--text-secondary));
+  font-weight: 450;
+}
+
+.app-landing .gradient-text-sage {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--accent-sage)) 0%,
+    hsl(var(--accent-sage) / 0.8) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.app-landing * {
+  transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.app-landing .card-hover-lift {
+  transition:
+    transform 0.25s cubic-bezier(0.4, 0.2, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.app-landing .card-hover-lift:hover,
+.app-landing .card-hover-lift:focus-visible {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow:
+    0 8px 32px 0 rgba(16, 30, 54, 0.12),
+    0 1.5px 6px 0 rgba(16, 30, 54, 0.08);
+}

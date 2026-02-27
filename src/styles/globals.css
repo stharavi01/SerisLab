@@ -1,0 +1,268 @@
+@import "tailwindcss";
+@custom-variant dark (&:is([data-theme="dark"] *));
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-success: hsl(var(--success));
+  --color-success-foreground: hsl(var(--success-foreground));
+  --color-warning: hsl(var(--warning));
+  --color-warning-foreground: hsl(var(--warning-foreground));
+  --color-info: hsl(var(--info));
+  --color-info-foreground: hsl(var(--info-foreground));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  :root,
+  :root[data-theme="light"] {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 9%;
+    --info: 221 83% 53%;
+    --info-foreground: 0 0% 98%;
+  }
+
+  :root[data-theme="dark"] {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 64%;
+    --accent: 0 0% 14%;
+    --accent-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 14%;
+    --ring: 0 0% 83%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 10%;
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 98%;
+  }
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border) / 0.7) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: hsl(var(--border) / 0.7);
+  border-radius: 2px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--border) / 0.9);
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.preview-mobile .sm\:flex,
+.preview-mobile .md\:flex,
+.preview-mobile .lg\:flex {
+  display: none !important;
+}
+
+.preview-mobile .sm\:block,
+.preview-mobile .md\:block,
+.preview-mobile .lg\:block {
+  display: none !important;
+}
+
+.preview-mobile .sm\:grid,
+.preview-mobile .md\:grid,
+.preview-mobile .lg\:grid {
+  display: none !important;
+}
+
+.preview-mobile .sm\:inline-flex,
+.preview-mobile .md\:inline-flex,
+.preview-mobile .lg\:inline-flex {
+  display: none !important;
+}
+
+.preview-mobile .flex.sm\:hidden {
+  display: flex !important;
+}
+
+.preview-mobile .block.sm\:hidden {
+  display: block !important;
+}
+
+.preview-mobile .grid.sm\:hidden {
+  display: grid !important;
+}
+
+.preview-tablet .md\:flex,
+.preview-tablet .lg\:flex {
+  display: none !important;
+}
+
+.preview-tablet .md\:block,
+.preview-tablet .lg\:block {
+  display: none !important;
+}
+
+.preview-tablet .md\:grid,
+.preview-tablet .lg\:grid {
+  display: none !important;
+}
+
+.preview-tablet .sm\:flex {
+  display: flex !important;
+}
+
+.preview-tablet .sm\:block {
+  display: block !important;
+}
+
+.preview-tablet .sm\:grid {
+  display: grid !important;
+}
+
+.preview-tablet .flex.md\:hidden {
+  display: flex !important;
+}
+
+.preview-tablet .block.md\:hidden {
+  display: block !important;
+}
+
+.preview-tablet .grid.md\:hidden {
+  display: grid !important;
+}
+
+.preview-mobile [class*="sm:grid-cols-"] {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
+.preview-mobile .sm\:grid-cols-2,
+.preview-mobile .md\:grid-cols-2,
+.preview-mobile .lg\:grid-cols-2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
+.preview-mobile .sm\:grid-cols-3,
+.preview-mobile .md\:grid-cols-3,
+.preview-mobile .lg\:grid-cols-3 {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
+.preview-mobile .sm\:grid-cols-4,
+.preview-mobile .md\:grid-cols-4,
+.preview-mobile .lg\:grid-cols-4 {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
+.preview-mobile .sm\:flex-row,
+.preview-mobile .md\:flex-row,
+.preview-mobile .lg\:flex-row {
+  flex-direction: column !important;
+}
+
+/* ===========================================
+   Portfolio Section Layout System
+   Uses CSS variables from template files
+   =========================================== */
+
+.portfolio-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-section {
+  padding-top: var(--section-spacing, 4rem);
+  padding-bottom: var(--section-spacing, 4rem);
+}
+
+/* Hero section handles its own vertical spacing */
+.portfolio-section[data-section="hero"],
+.portfolio-section[data-section="navbar"] {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.portfolio-container {
+  width: 100%;
+  max-width: var(--container-width, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding, 1.5rem);
+  padding-right: var(--container-padding, 1.5rem);
+}

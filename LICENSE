@@ -1,0 +1,22 @@
+Business Source License 1.1
+
+Licensor: SerisLab
+Licensed Work: serislab (the software)
+Additional Use Grant: non-commercial use
+Change Date: February 27, 2030
+Change License: MIT
+
+TERMS
+
+The Licensed Work is provided under the terms of the Business Source License 1.1 (the "License").
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, and distribute the Software, for non-commercial purposes only, subject to the following conditions:
+
+1. The Licensed Work may only be used for non-commercial purposes, except as otherwise expressly permitted by the Licensor.
+2. On the Change Date, the Licensed Work will be made available under the Change License, as stated above.
+3. Any use of the Licensed Work for commercial purposes prior to the Change Date requires a separate, explicit license from the Licensor.
+4. The License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for describing the origin of the Licensed Work and reproducing the content of the copyright notice.
+
+Unless required by applicable law or agreed to in writing, the Licensed Work is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+For more information, see https://mariadb.com/bsl11.

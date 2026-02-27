@@ -1,0 +1,19 @@
+# SerisLab Robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow private/authenticated pages
+Disallow: /dashboard/
+Disallow: /editor/
+Disallow: /onboarding/
+Disallow: /auth/
+Disallow: /api/
+
+# Disallow preview/internal routes
+Disallow: /preview/
+Disallow: /_next/
+Disallow: /static/
+
+# Sitemap
+Sitemap: https://serislab.com/sitemap.xml
