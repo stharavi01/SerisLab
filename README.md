@@ -30,7 +30,7 @@ Most developer portfolios fail not because of talent — but because of three un
 Developers are too busy building to maintain their own story. Portfolios go stale for months — or years. SerisLab removes the maintenance burden entirely with GitHub auto-sync and AI-powered updates.
 
 ### 2. Blank page paralysis
-Writing about yourself is hard. Turning raw GitHub commits into compelling narratives is even harder. SerisLab's AI reads your code, commit history, and READMEs and does the writing for you.
+Writing about yourself is hard. Turning raw GitHub code into compelling narratives is even harder. SerisLab's AI reads your project description and does the writing for you.
 
 ### 3. Disconnected stories
 GitHub shows code. A resume shows history. Neither alone tells the full picture to a recruiter. SerisLab's Dual-Source feature merges both into one unified portfolio.
@@ -60,14 +60,14 @@ AI reads your code, commit messages, README files, or resume and writes:
 - A compelling bio
 
 ### Step 3 — Publish (20 seconds)
-Pick a template, customize your style, publish instantly. Share your portfolio URL. GitHub portfolios auto-update with new commits — one setup, maintained forever.
+Pick a template, customize your style, publish instantly. Share your portfolio URL. GitHub portfolios auto-update with new projects — one setup, maintained forever.
 
 ---
 
 ## Key Features
 
 ### AI Content Generation
-Don't just say "Built a React app." SerisLab's AI reads your repositories, commit history, and README files, then generates professional descriptions like: *"Built a real-time platform for 10,000+ users, reducing deployment time by 60% using WebSockets and Redis."* Same work. A much better story.
+Don't just say "Built a React app." SerisLab's AI reads your repositories description, then generates professional descriptions like: *"Built a real-time platform for 10,000+ users, reducing deployment time by 60% using WebSockets and Redis."* Same work. A much better story.
 
 ### GitHub Auto-Sync
 Free plan: manual sync once daily (one click). Pro: real-time automatic sync. Push a commit → portfolio updates. No rebuilding required.
